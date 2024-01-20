@@ -1,0 +1,13 @@
+<form method="post" enctype="multipart/form-data" style="display: flex; gap: 4px">
+    {% csrf_token %}
+    <div style="display: flex; flex-direction: column; gap: 4px">
+        <input type="file" name="photo_1">
+        <input type="file" name="photo_2">
+        <input type="file" name="photo_3">
+        <input type="file" name="photo_4">
+    </div>
+
+    <button type="submit">
+        Отправить
+    </button>
+</form>
